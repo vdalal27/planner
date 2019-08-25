@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import Layout from '../components/layout';
+
 export default function Menu() {
     return (
       <div>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
+        <Layout>
         <h1>Menu</h1>
+        </Layout>
       </div>
     );
   }
