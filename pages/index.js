@@ -3,8 +3,8 @@ import Layout from '../components/layout';
 
 const PostLink = props => ( //dynamic pages
     <li>
-      <Link href={`/post?title=${props.title}`}> 
-        <a>{props.title}</a> 
+      <Link href="/p/[id]" as={`/p/${props.id}`}> 
+        <a>{props.id}</a> 
       </Link>
     </li>
 ); //pass data as query string parameter
@@ -15,10 +15,10 @@ export default function Home(){
             <Layout>
             <h1>Planner</h1>
             <ul>
-                <PostLink title="Breakfast" />
-                <PostLink title="Lunch" />
-                <PostLink title="Snack" />
-                <PostLink title="Dinner" />
+                <PostLink id="Breakfast" />
+                <PostLink id="Lunch" />
+                <PostLink id="Snack" />
+                <PostLink id="Dinner" />
             </ul>
             </Layout>
         </div>
