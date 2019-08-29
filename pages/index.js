@@ -2,17 +2,19 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import Markdown from 'react-markdown';
+import style from '../style/basic.css';
 
 export default () => {
     const router = useRouter();
     return (
       <Layout>
+        <div className="example">Hello World!</div>     
         <h1>{router.query.id}</h1>
         <div className="markdown">
           <Markdown
             source={`
 
-  ### Sign up and Get started!
+  # Sign up and Get started!
   
   And here's the content.
         `}
@@ -42,12 +44,3 @@ export default () => {
     );
   };
 
-// export default function Login(){
-//     return(
-//         <div>
-//             <Layout>
-//             <h1>Get Started!</h1>
-//             </Layout>
-//         </div>
-//     );
-// }
