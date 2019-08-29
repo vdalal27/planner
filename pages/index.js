@@ -34,7 +34,7 @@ export default () => {
             opacity: 0.6;
           }
   
-          .markdown h3 {
+          .markdown h1 {
             margin: 0;
             padding: 0;
             text-transform: uppercase;
