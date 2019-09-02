@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '../components/layout';
+import style from '../style/basic.css';
 import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 
@@ -17,7 +18,7 @@ export default function Home(){
         <div>
             <Layout>
                 <Table id='table'>
-                    <Thead>
+                    <Thead id='headings'>
                         <Tr>
                             <Th></Th>
                             <Th>Monday</Th>
@@ -29,24 +30,16 @@ export default function Home(){
                             <Th>Sunday</Th>
                         </Tr>
                     </Thead>
-                    <Tbody>
+                    <Tbody id='meal'>
                         <Tr>
-                            <Td>Breakfast</Td>
+                            <Td id='headings'>Breakfast</Td>
                             <Td>{}</Td>
                             <Td>{}</Td>
                             <Td>{}</Td>
                             <Td>{}</Td>
                         </Tr>
                         <Tr>
-                            <Td>Snack 1</Td>
-                            <Td>{}</Td>
-                            <Td>{}</Td>
-                            <Td>{}</Td>
-                            <Td>{}</Td>
-                            <Td>{}</Td>
-                        </Tr>
-                        <Tr>
-                            <Td>Lunch</Td>
+                            <Td id='headings'>Snack 1</Td>
                             <Td>{}</Td>
                             <Td>{}</Td>
                             <Td>{}</Td>
@@ -54,7 +47,7 @@ export default function Home(){
                             <Td>{}</Td>
                         </Tr>
                         <Tr>
-                            <Td>Snack 2</Td>
+                            <Td id='headings'>Lunch</Td>
                             <Td>{}</Td>
                             <Td>{}</Td>
                             <Td>{}</Td>
@@ -62,7 +55,15 @@ export default function Home(){
                             <Td>{}</Td>
                         </Tr>
                         <Tr>
-                            <Td>Dinner</Td>
+                            <Td id='headings'>Snack 2</Td>
+                            <Td>{}</Td>
+                            <Td>{}</Td>
+                            <Td>{}</Td>
+                            <Td>{}</Td>
+                            <Td>{}</Td>
+                        </Tr>
+                        <Tr>
+                            <Td id='headings'>Dinner</Td>
                             <Td>{}</Td>
                             <Td>{}</Td>
                             <Td>{}</Td>
