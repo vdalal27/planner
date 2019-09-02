@@ -1,0 +1,85 @@
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  }
+  
+  thead th, tfoot th {
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+  
+
+table, th,td{
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+}
+
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+thead th:nth-child(1) {
+    width: 70%;
+  }
+  
+  /* thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  } */
+  
+  th, td {
+    padding: 20px;
+  }
+th{
+    height: 100px;
+    background-color: rgb(30, 170, 30);
+}
+tr.clicked{
+    background-color: #666;
+}
+tr{
+    background-color: rgb(183, 240, 221);
+    height: auto;
+}
+
+tr:hover{
+    background-color: rgb(76, 156, 76);
+    z-index: -1;
+}
+
+caption {
+    font-family: 'Rock Salt', cursive;
+    padding: 20px;
+    font-style: italic;
+    caption-side: bottom;
+    color: #666;
+    text-align: right;
+    letter-spacing: 1px;
+  }
+  

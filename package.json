@@ -27,5 +27,9 @@
     "react-markdown": "^4.1.0",
     "react-super-responsive-table": "^5.0.0",
     "styled-jsx": "^3.2.1"
+  },
+  "devDependencies": {
+    "file-loader": "^4.2.0",
+    "url-loader": "^2.1.0"
   }
 }
